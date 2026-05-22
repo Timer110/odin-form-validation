@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Template</title>
+    <title>JS Form Validation</title>
 </head>
 <body>
-    <p>This is a Webpack template</p>
+    <div class="left">
+        <div class="logo-top-left">
+             iCloud
+        </div>
+        <div class="form-wrapper">
+            <h1>Registrieren</h1>
+            <h3>Bitte gebe deine Daten ein</h3>
+            <form class="signup-form" data-js="signup-form">
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="input-signup-email" class="input-signup" data-js="input-signup-email">
+                <label for="password">Passwort</label>
+                <input type="password" name="password" id="input-signup-password" class="input-signup" data-js="input-signup-password">
+                <label for="password-confirm">Passwort wiederholen</label>
+                <input type="password" name="password-confirm" id="input-signup-password-confirm" data-js="input-signup-password-confirm">
+                <label for="postalcode">Postleitzahl</label>
+                <input type="number" name="postalcode" id="input-signup-postalcode" data-js="input-signup-postalcode">
+                <label for="country">Land</label>
+                <select name="country" id="input-signup-country">
+                    <option value="germany">Deutschland</option>
+                    <option value="austria">Österreich</option>
+                    <option value="switzerland">Schweiz</option>
+                </select>
+                <button type="submit">Registrieren</button>
+            </form>    
+        </div>
+    </div>
+    <div class="right">
+
+    </div>
+    
 </body>
 </html>
