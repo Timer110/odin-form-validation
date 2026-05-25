@@ -38,6 +38,16 @@ input, select {
     font-family: "Inter", sans-serif;
     font-size: 16px;
 }
+input[data-touched]:invalid {
+    color: red;
+    border-color: red;
+}
+
+input[data-touched]:valid {
+    color: green;
+    border-color: green;
+}
+
 .logo-top-left {
     font-size: 60px;
     padding: 20px;

@@ -14,21 +14,21 @@
             <h1>Registrieren</h1>
             <h3>Bitte gebe deine Daten ein</h3>
             <form class="signup-form" data-js="signup-form" novalidate>
-                <label for="email">E-Mail</label>
-                <input type="email" name="email" id="input-signup-email" class="input-signup" data-js="input-signup-email">
-                <label for="password">Passwort</label>
-                <input type="password" name="password" id="input-signup-password" class="input-signup" data-js="input-signup-password">
-                <label for="password-confirm">Passwort wiederholen</label>
-                <input type="password" name="password-confirm" id="input-signup-password-confirm" data-js="input-signup-password-confirm">
-                <label for="postalcode">Postleitzahl</label>
-                <input type="number" name="postalcode" id="input-signup-postalcode" data-js="input-signup-postalcode">
-                <label for="country">Land</label>
-                <select name="country" id="input-signup-country">
+                <label for="input-signup-email">E-Mail*</label>
+                <input type="email" name="email" id="input-signup-email" class="input-signup" data-js="input-signup-email" required>
+                <label for="input-signup-password">Passwort*</label>
+                <input type="password" name="password" id="input-signup-password" class="input-signup" data-js="input-signup-password" required>
+                <label for="input-signup-password-confirm">Passwort wiederholen*</label>
+                <input type="password" name="password-confirm" id="input-signup-password-confirm" data-js="input-signup-password-confirm" required>
+                <label for="input-signup-postalcode">Postleitzahl</label>
+                <input type="text" name="postalcode" id="input-signup-postalcode" data-js="input-signup-postalcode" pattern="\d{5}" inputmode="numeric">
+                <label for="input-signup-country">Land*</label>
+                <select name="country" id="input-signup-country" data-js="input-signup-country">
                     <option value="germany">Deutschland</option>
                     <option value="austria">Österreich</option>
                     <option value="switzerland">Schweiz</option>
                 </select>
-                <button type="submit">Registrieren</button>
+                <button type="submit" data-js="signup-submit">Registrieren</button>
             </form>    
         </div>
     </div>
